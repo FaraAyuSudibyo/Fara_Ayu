@@ -484,7 +484,7 @@ nav ul{
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px palevioletred;
-    height: 100000px;
+    height: 1700px;
     text-align: center;
     padding: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -502,6 +502,11 @@ li{
 .pipas{
     text-align: left;
     text-emphasis-color: black;
+}
+
+.yh {
+    display: flex;
+    gap: 30px;
 }
 
 
