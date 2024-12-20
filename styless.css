@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+     
+}
+
+h1,h2,h3,h4,h5,h6, strong {
+    color: rgb(193, 29, 57);
+}
+
+p {
+    font-size: 1rem; /* 16pm */
+    line-height: 1,9rem;
+}
+
+p, span, label, input, textarea, li {
+    color: grey;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto ;
+}
+
+/*buttons*/
+.btn {
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1.5px solid gainsboro;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn:houver {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+/*tittels*/
+.section-tittle {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.pre-tittle {
+    text-transform: uppercase; /*agar huruf besar semua*/
+    letter-spacing: .5rem; /*jarak antara huruf*/
+    color: rgb(224, 138, 154);
+    position: relative; 
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.pre-tittle::before {
+    content: ""; /*harus ada walaupuan kosong*/
+    width: 30px;
+    height: 1px;
+    background: gainsboro;
+    position: absolute; /*agar tetap ada di jangkauan*/
+    display: block;
+    left: 0;
+    top: 50%; /*biar kebawah*/
+}
+
+/*layout*/
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*untuk mengulang menjadi 3 kolom*/
+}
+
+/*logo and navigation menu*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul {
+    list-style: none ; /*agar tidak ada titik*/
+    display: flex; /*kesamping*/
+    gap: 3rem; /*jarak*/
+}
+
+.logo {
+    display: flex;
+    align-items: center; /*ke tengah*/
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a {
+    color: rgb(224, 103, 103);
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    padding: 12px 25px;
+    margin: 5px 0px;
+    border: 2px solid pink;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    color: rgb(182, 25, 25);
+}
+
+.nav {
+    padding: 15px 20px;
+    background-color: white;
+    border: 2px solid pink;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 1s ease;
+    cursor: pointer;
+    color: rgb(201, 9, 41);
+}  
+
+.nav a:hover{
+    background-color: rgb(236, 168, 179);
+    color: white;
+    border: rgb(108, 17, 32);
+}
+
+/*burger*/
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color:  rgb(182, 25, 25);
+    margin: 7px;
+    transition: all .3s;
+    z-index: 99; /*supaya muncul paling atas*/
+}
+
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed; /*supaya selalu muncul dilayar*/
+    top: 33px;
+    right: 35px;
+}
+
+/*hero section*/
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*2 kolom yg sama besar*/
+    align-items: center;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: .5rem 0 1rem;
+}
+
+.hero-name span {
+    color: salmon;
+} 
+
+.hero-name {
+    color: rgb(197, 64, 64);
+}
+
+.hero-right img {
+    width: 75%;
+    border-radius: 700px;
+    margin-left: 95px;
+}
+
+.hero-right {
+    display: flex;
+    text-align: center;
+} 
+
+.hero-left p {
+    margin: 25px 0 30px;
+}
+
+/*btn*/
+.btn1 {
+    padding: 15px 20px;
+    background-color: white;
+    border: 2px solid pink;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 1s ease;
+    cursor: pointer;
+    color: rgb(201, 9, 41);
+    display: flex;
+}
+
+.btn1:hover{
+    background-color: pink;
+    color: white;
+    border: pink;
+}
+
+/*profil section*/
+.profil .pre-tittle {
+    margin: 0 auto;
+}
+
+.profil-tittle {
+    text-align: center;
+}
+
+.pre-tittle {
+    text-align: center;
+}
+
+.profil {
+    padding: 3rem 2rem;
+      
+}
+
+.profil {
+    border-radius: 100px;
+}
+
+.profil h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+} 
+
+.pendidikan {
+    background-color: rgb(243, 207, 213);
+    box-shadow: color(srgb rgb(5, 0, 0) green blue);
+}
+
+/*services section*/
+
+.services .pre-tittle {
+    margin: 0 auto;
+}
+
+.services-tittle {
+    text-align: center;
+}
+
+.services {
+    padding: 3rem 2rem;
+    text-align: center; 
+}
+
+.services {
+    border-radius: 100px;
+}
+
+.services h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.service-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px palevioletred;
+    height: 210px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px palevioletred;
+}
+
+c
+.service-icon {
+    width: fit-content;
+    margin:0 auto; /*atas bawah 0 dan kanan kiri auto*/
+    padding: 1rem 1.3rem; /*atas bawah 1rem, kanan kiri 1.3rem*/
+    border-radius: 0.5rem;
+}
+
+.service-icon svg /*merubah warna icon*/ {
+    fill: rgb(226, 108, 127);
+}
+
+/*portofolio*/
+
+.portofolio .pre-tittle {
+    margin: 0 auto;
+}
+
+.portofolio-tittle {
+    text-align: center;
+}
+
+.portofolio {
+    padding: 3rem 2rem;
+    text-align: center; 
+}
+
+.portofolio {
+    border-radius: 100px;
+}
+
+.portofolio h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+#Education {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.headersklills h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: palevioletred;
+    margin-bottom: 40px;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.education-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px palevioletred;
+    width: calc(30% - 30px);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px palevioletred;
+}
+
+.education-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.education-info h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color:palevioletred;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.education-info p {
+    font-size: 1rem;
+    color: palevioletred;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .education-box {
+        width: 100%;
+    }
+}
+/*end of portofolio*/
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+/* hobby section */
+.hoby .pre-tittle {
+    margin: 0 auto;
+}
+
+.hoby-tittle {
+    text-align: center;
+}
+
+.pre-tittle {
+    text-align: center;
+}
+
+.hoby {
+    padding: 3rem 2rem;
+      
+}
+
+.hoby {
+    border-radius: 100px;
+}
+
+.hoby h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+} 
+
+.acc{
+    text-align: center;
+}
+
+/* footer section */
+footer {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    /* margin: 0; */
+    background-color: rgb(161, 10, 35);
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+footer p{
+    color: #fff;
+}
+
+/* article section */
+
+.article{
+    text-align: center;
+}
+
+.content{
+    text-align: center;
+    box-shadow:rgb(144, 9, 9);
+}
+
+nav ul{
+    display: contents;
+}
+
+.pipas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.pipas-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px palevioletred;
+    height: 100000px;
+    text-align: center;
+    padding: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pipas-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px palevioletred;
+}
+
+li{
+    color:black;
+}
+
+.pipas{
+    text-align: left;
+    text-emphasis-color: black;
+}
+
+
